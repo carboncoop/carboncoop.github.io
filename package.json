@@ -1,0 +1,21 @@
+{
+  "name": "energise",
+  "version": "1.0.0",
+  "description": "Energise festival website",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "jekyll serve --watch",
+    "clean": "npm run clean:css && npm run clean:js",
+    "clean:css": "rm -rf assets/css",
+    "clean:js": "rm -rf assets/js",
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "sass --style compact _src/scss/main.scss:assets/css/main.css",
+    "build:css:watch": "sass --watch --style compact _src/scss/main.scss:assets/css/main.css",
+    "build:js": "cp src/js/ assets/js/",
+    "deploy": "npm run build && git checkout master && git merge dev && git push origin master"
+  },
+  "author": "Fieldwork",
+  "license": "ISC"
+}

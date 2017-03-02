@@ -1,0 +1,40 @@
+/**
+ * Domaine Display (regular) — headings and larger text
+ */
+
+@font-face {
+    font-family: 'Domaine Display';
+    src: url('/assets/fonts/DomaineDisplayWeb-Regular.eot');
+    src: url('/assets/fonts/DomaineDisplayWeb-Regular.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/DomaineDisplayWeb-Regular.woff2') format('woff2'),
+         url('/assets/fonts/DomaineDisplayWeb-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin type-family-domaine-display {
+    font-family: 'Domaine Display', Georgia, serif;
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/**
+ * Cutive Mono — body and secondary font
+ */
+
+@mixin type-family-cutive-mono {
+    font-family: 'Cutive Mono', monospace;
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+    @include type-family-cutive-mono;
+    font-size: 16px;
+}

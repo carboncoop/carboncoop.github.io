@@ -1,0 +1,7 @@
+@charset "UTF-8";
+/** Domaine Display (regular) — headings and larger text */
+@font-face { font-family: 'Domaine Display'; src: url("/assets/fonts/DomaineDisplayWeb-Regular.eot"); src: url("/assets/fonts/DomaineDisplayWeb-Regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/DomaineDisplayWeb-Regular.woff2") format("woff2"), url("/assets/fonts/DomaineDisplayWeb-Regular.woff") format("woff"); font-weight: normal; font-style: normal; }
+/** Cutive Mono — body and secondary font */
+body { font-family: 'Cutive Mono', monospace; font-weight: normal; font-style: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 16px; }
+
+/*# sourceMappingURL=main.css.map */
