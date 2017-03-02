@@ -1,37 +1,56 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>{{ page.title | default: site.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
-    <link rel="stylesheet" href="{{ '/assets/css/main.css?v=' | append: site.github.build_revision | relative_url }}">
-  </head>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ page.title | default: site.title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#157878">
+        <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+        <link rel="stylesheet" href="{{ '/assets/css/main.css?v=' | append: site.github.build_revision | relative_url }}">
+    </head>
   <body>
-    <header class="page-header">
-      <h1 class="project-name"><img src="http://carbon.coop/sites/default/files/styles/col10/public/field/image/facebook%20header.png" /></h1>
-      <h2 class="project-tagline">Celebrate low carbon, diverse and just communities with Carbon Coop at Energise.<br />31st March - 2nd April 2017</h2>
-      
+
+    <header class="site-header">
+        
+        <div class="layout-width">
+            <div class="grid">
+                <div class="grid__col6">
+                    <p class="site-header__event-info">A weekend of music, food, talks, workshops, open homes, poetry,  theatre, films, family friendly activities and more.</p>
+                </div>
+                <div class="grid__col3">
+                    <p class="site-header__event-info">Friday 31st March – Sunday 2nd April 2017</p>
+                </div>
+                <div class="grid__col3">
+                    <p class="site-header__event-info">Various locations across Greater Manchester</p>
+                </div>
+            </div>
+
+            <div class="site-header__logo">
+                <img src="/assets/img/energise-logo.svg" alt="Energise">
+            </div>
+
+            <a class="site-header__arrow" href="#main-content">Skip to main content</a>
+        </div>
+
     </header>
 
-    <section class="main-content">
-      {{ content }}
+    <section class="main-content" id="main-content">
+        
     </section>
 
     <footer class="site-footer">
-        
+
     </footer>
 
     {% if site.google_analytics %}
-      <script type="text/javascript">
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview');
-      </script>
+        <script type="text/javascript">
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', '{{ site.google_analytics }}', 'auto');
+            ga('send', 'pageview');
+        </script>
     {% endif %}
   </body>
 </html>

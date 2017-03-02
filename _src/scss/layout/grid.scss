@@ -1,0 +1,43 @@
+/**
+ * 12 column grid
+ */
+
+.grid {
+    width: 100%;
+    overflow: hidden;
+}
+
+.grid__col3 {
+    float: left;
+    width: 25%;
+}
+
+.grid__col5 {
+    float: left;
+    width: 41.666%;
+}
+
+.grid__col6 {
+    float: left;
+    width: 50%;
+}
+
+@media all and (max-width: 750px) {
+    .grid__col3 {
+        width: 50%;
+    }
+
+    .grid__col5 {
+        
+    }
+
+    .grid__col6 {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .grid__col3 {
+        width: 100%;
+    }
+}

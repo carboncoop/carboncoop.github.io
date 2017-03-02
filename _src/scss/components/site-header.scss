@@ -1,0 +1,66 @@
+.site-header {
+    position: relative;
+    height: 100vh;
+    background: $color-red;
+
+    &__event-info {
+        max-width: 470px;
+        padding-top: 1.6em;
+        padding-right: 1.6em;
+        @include type-family-domaine-display;
+        font-size: 22px;
+        line-height: 1.2727em;
+        color: white;
+
+        @media all and (max-width: 600px) {
+            padding-top: 1em;
+        }
+
+        @media all and (max-width: 500px) {
+            font-size: 18px;
+        }
+    }
+
+    &__logo {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5%;
+        right: 5%;
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 750px;
+            width: 100%;
+        }
+
+        @media all and (max-width: 600px) {
+            top: 55%;
+        }
+
+        @media all and (max-width: 400px) {
+            position: relative;
+            top: auto;
+            transform: translateY(0);
+            left: auto;
+            right: auto;
+            margin-top: 4em;
+        }
+    }
+
+    &__arrow {
+        position: absolute;
+        bottom: 7%;
+        left: 50%;
+        margin-left: -19px;
+        width: 38px;
+        height: 38px;
+        text-indent: -999em;
+        @include bg-svg-fallback(/assets/img/header-arrow);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+}
+

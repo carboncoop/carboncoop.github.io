@@ -32,9 +32,3 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
-
-body {
-    @include type-family-cutive-mono;
-    font-size: 16px;
-}
