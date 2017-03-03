@@ -37,6 +37,62 @@ npm run build:watch
 
 Visit: http://127.0.0.1:4000/
 
+Adding Content
+--------------
+
+To add a section to the page:
+
+```
+<section class="page-section page-section--green">
+
+    <div class="grid">
+        <h2 class="grid__col5 page-section__title">… Section Title …</h2>
+        <p class="grid__col7 page-section__intro">… Section intro …</p>
+    </div>
+
+    … items …
+
+</section>
+```
+
+Then add items inside the section:
+
+```
+<div class="page-item page-item--green">
+    <div class="grid">
+        <div class="grid__col5">
+            <div class="page-item__image">
+                <img src="… your img url …" alt="">
+            </div>
+        </div>
+        <div class="grid__col7">
+            <div class="page-item__header">
+                <h3>… Item Title …</h3>
+                <p>… Date … <br />… Time …</p>
+            </div>
+            <div class="page-item__body">
+                <p>… Item description …</p>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+If the item doesn’t have an image, you can drop the `<img>` element and you’ll get a fallabck background pattern:
+
+```
+<div class="page-item page-item--green">
+    <div class="grid">
+        <div class="grid__col5">
+            <div class="page-item__image">
+            </div>
+        </div>
+        …
+    </div>
+</div>
+```
+
+
 Deployment
 ----------
 
