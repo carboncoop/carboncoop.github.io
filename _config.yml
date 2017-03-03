@@ -1,1 +1,5 @@
-theme: jekyll-theme-cayman
+exclude:
+  - CNAME
+  - package.json
+  - README.md
+  - src

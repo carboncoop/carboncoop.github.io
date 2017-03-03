@@ -1,0 +1,4 @@
+@mixin bg-svg-fallback ($filename-without-extension) {
+    background: url(#{$filename-without-extension}.png);
+    background: url(#{$filename-without-extension}.svg), linear-gradient(transparent, transparent);
+}
