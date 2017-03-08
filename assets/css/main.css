@@ -50,6 +50,10 @@ html, body { font-family: 'Cutive Mono', monospace; font-weight: normal; font-st
 .site-header__logo { position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); left: 5%; right: 5%; }
 .site-header__logo img { display: block; margin: 0 auto; max-width: 750px; width: 100%; }
 @media all and (max-width: 760px) { .site-header__logo { top: 20%; left: 10%; right: 10%; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); } }
+.site-header__links { margin-top: 1em; text-align: center; color: white; }
+.site-header__links a { display: inline-block; padding: 0 0.3em 0 0.8em; border-left: 1px solid white; text-decoration: none; color: white; }
+.site-header__links a:first-child { border-left: 0; }
+.site-header__links a:hover { text-decoration: underline; }
 .site-header__arrow { position: absolute; bottom: 7%; left: 50%; margin-left: -19px; width: 38px; height: 38px; text-indent: -999em; background: url(/assets/img/header-arrow.png); background: url(/assets/img/header-arrow.svg), linear-gradient(transparent, transparent); background-repeat: no-repeat; background-size: 100%; background-position: center; opacity: 0.8; transition: opacity .3s ease-out; }
 .site-header__arrow:hover { opacity: 1; animation: headerArrowHover 0.5s ease-out infinite both; animation-direction: alternate; }
 @media all and (max-height: 620px) and (max-width: 670px) { .site-header__arrow { display: none; } }
@@ -63,9 +67,9 @@ html, body { font-family: 'Cutive Mono', monospace; font-weight: normal; font-st
 .page-section { padding-bottom: 1em; margin-bottom: 3em; border-bottom: 1px solid #bebebe; }
 .page-section__title, .page-section__intro { padding-bottom: 3em; font-family: 'Domaine Display', Georgia, serif; font-weight: normal; font-style: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 22px; line-height: 1.2727em; }
 
-.page-section--purple .page-section__title, .page-section--purple .page-section__intro { color: #a260b2; }
+.page-section--purple .page-section__title, .page-section--purple .page-section__intro, .page-section--purple a { color: #a260b2; }
 
-.page-section--green .page-section__title, .page-section--green .page-section__intro { color: #00bcb4; }
+.page-section--green .page-section__title, .page-section--green .page-section__intro, .page-section--green a { color: #00bcb4; }
 
 .page-item__image { position: relative; width: 90%; height: 0; padding-bottom: 52%; margin-bottom: 40px; overflow: hidden; }
 .page-item__image:before { content: ' '; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: transparent url(/assets/img/energise-website-background.png) no-repeat center center; background-size: cover; opacity: 0.2; }
@@ -73,11 +77,15 @@ html, body { font-family: 'Cutive Mono', monospace; font-weight: normal; font-st
 @media all and (max-width: 500px) { .page-item__image { width: 100%; } }
 .page-item__header { padding-bottom: 1em; font-family: 'Domaine Display', Georgia, serif; font-weight: normal; font-style: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 22px; line-height: 1.2727em; }
 .page-item__body { margin-bottom: 40px; }
+.page-item a { text-decoration: none; }
+.page-item a:hover { text-decoration: underline; }
 
 .page-item--purple .page-item__image { background: #a260b2; }
 .page-item--purple .page-item__header { color: #a260b2; }
+.page-item--purple a { color: #a260b2; }
 
 .page-item--green .page-item__image { background: #00bcb4; }
 .page-item--green .page-item__header { color: #00bcb4; }
+.page-item--green a { color: #00bcb4; }
 
 /*# sourceMappingURL=main.css.map */

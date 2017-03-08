@@ -12,14 +12,16 @@
 
 .page-section--purple {
     .page-section__title,
-    .page-section__intro {
+    .page-section__intro,
+    a {
         color: $color-purple;
     }
 }
 
 .page-section--green {
     .page-section__title,
-    .page-section__intro {
+    .page-section__intro,
+    a {
         color: $color-green;
     }
 }
