@@ -41,6 +41,14 @@
     &__body {
         margin-bottom: 40px;
     }
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .page-item--purple {
@@ -51,6 +59,10 @@
     .page-item__header {
         color: $color-purple;
     }
+
+    a {
+        color: $color-purple;
+    }
 }
 
 .page-item--green {
@@ -59,6 +71,10 @@
     }
 
     .page-item__header {
+        color: $color-green;
+    }
+
+    a {
         color: $color-green;
     }
 }
